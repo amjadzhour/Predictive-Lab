@@ -1,0 +1,118 @@
+
+
+
+<Label>
+    font_size:40
+    color:(18/255,65/255,153/255,0.8)
+    
+<amjad@Button>
+    background_color:(0,0,0,0)
+    canvas.before:
+        Color:
+            rgba:(59/255,18/255,153/255,0.8)
+        RoundedRectangle:
+            size:self.size
+            pos:self.pos
+            radius:[20]
+    color:(0/255,255/255,55/255,1)     
+
+<Button>
+    background_color:(59/255,18/255,153/255,0.8)
+    color:(0/255,255/255,55/255,1)     
+
+
+
+<SecondWD>
+    BoxLayout:
+        spacing:20
+        size:root.width,root.height
+        orientation:"vertical"
+        Label:
+            height:50
+            text:"Gnmae in tic tac toe"
+            bold:3  
+    
+        amjad:    
+            text:"home"
+            size_hint:(None,None)   
+            width:120
+            heigth:60  
+            pos_hint:{"x":0,"y":0.47}
+            on_press:app.root.current="FirstWN"    
+       
+        amjad:
+            
+            text:"play"
+            
+            size_hint:(None,None)   
+            width:120
+            heigth:60  
+            pos_hint:{"x":0.47}
+            on_press:root.play()
+            
+            
+            on_press:root.play()
+        amjad:
+            height:50
+            text:"reset"
+            size_hint:(None,None)   
+            width:120
+            heigth:60  
+            pos_hint:{"x":0.47}
+            on_press:root.reset()
+        Label:
+            id:t1
+            height:50
+            text:"play in"    
+        GridLayout:
+            sapcing:100
+            size:90,300
+            size_hint_y:10
+            cols:3
+            Button:
+                id:b1
+                on_press:root.cleack("1,1")
+
+            Button:
+                id:b2
+                on_press:root.cleack("1,2")    
+
+            Button:
+                id:b3
+                on_press:root.cleack("1,3")    
+
+            Button:
+                id:b4
+                on_press:root.cleack("2,1") 
+
+            Button:
+                id:b5
+                on_press:root.cleack("2,2")   
+
+            Button:
+                id:b6
+                on_press:root.cleack("2,3")     
+
+            Button:
+                id:b7
+                on_press:root.cleack("3,1")   
+
+            Button:
+                id:b8
+                on_press:root.cleack("3,2")                         
+
+            Button:
+                id:b9
+                on_press:root.cleack("3,3")           
+
+<FirstWN>
+    
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            text:"welcom"
+            bold:40
+        amjad:    
+            text:"Gnmae in tic tac toe"
+            on_press:app.root.current="head"
+            
