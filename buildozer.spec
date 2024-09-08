@@ -4,7 +4,7 @@
 title = Predictive Lab
 
 # (str) Package name
-package.name = PredictiveLab
+package.name = MyApp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.novfensec
