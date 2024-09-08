@@ -113,7 +113,5 @@ jobs:
         with:
           name: package
           path: bin/*.apk
-      - name: Install Android SDK API 31
-        run: |
-            yes | sdkmanager "platforms;android-31"
+    
    
